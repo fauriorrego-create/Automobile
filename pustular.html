@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formularioc1.css">
+    <title>Fase 1 de la compra</title>
+</head>
+<body>
+        <header>
+        <a href="">
+            <img class="img" src="otrasimg/Diseño_sin_título__1_-removebg-preview.png" alt="Logo de la cocina" >
+        </a>
+            <article class="titulo">
+                <h1>El paraiso de los autos</h1>
+            </article>
+    </header>
+    <section class="menu">
+        <details>
+            <summary>Menu</summary>
+            <nav class="barrasec">
+                <a href="inicio.html">Inicio</a>
+                <a href="clasicos.html">Clasicos</a>
+                <a href="modificados.html">Modificados</a>
+                <a href="pustular.html">Postular</a>
+                <a href="infoautos.html">Info autos</a>
+                <a href="quienessomos.html">Quienes somos</a>
+                <a href="index.html">cuenta</a>
+            </nav>
+        </details>
+    </section>
+          <nav class="barraprin">
+                <a href="inicio.html">Inicio</a>
+                <a href="clasicos.html">Clasicos</a>
+                <a href="modificados.html">Modificados</a>
+                <a href="pustular.html">Postular</a>
+                <a href="infoautos.html">Info autos</a>
+                <a href="quienessomos.html">Quienes somos</a>
+                <a href="index.html">cuenta</a>
+           </nav>
+<section class="titulo1">           
+    <h1>formulario de compra</h1>
+</section>
+<div class="pasos">
+    <h2>fase 1</h2>
+    <p>Datos de usuario</p>
+    <div class="indicacion">
+        <img src="otrasimg/persona.png" alt="" class="prin">
+        <hr>
+        <img src="otrasimg/auto.png" alt="">
+    </div>
+</div>
+
+    <article class="content">
+        <form action="postular2.html">
+            <label for="nombre">Nombre:</label>
+            <input 
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="ingresa un nombre"
+                required 
+                minlength="5" 
+                maxlength="30"
+                class="campo"
+            >
+        <label for="apellido">Apellido</label>
+            <input 
+                 type="text" 
+                 placeholder="Apellido"
+                 id="apellido"
+                 name="apellido"
+                 placeholder="ingresa un apellido"
+                 required 
+                 minlength="5" 
+                 maxlength="30"
+                 class="campo"
+            >       
+        <label for="correo">Correo electronico</label>
+            <input 
+                type="email" 
+                placeholder="correo electronico"
+                id="correo"
+                name="correo"
+                required
+                class="campo"
+            >
+                <label for="Telefono">Telefono:</label>
+            <input 
+                type="number" 
+                placeholder="Telefono"
+                id="Telefono"
+                name="Telefono"
+                required 
+                minlength="5" 
+                maxlength="15"
+                class="campo"
+                >
+                <fieldset class="campo">
+            <legend>Genero</legend>
+            <article>
+              <label for="Masculino">Masculino</label>
+              <input type="radio" id="Masculino " name="Genero" required  value="Masculino">
+            </article>
+            <article>
+              <label for="Femenino">Femenino</label>
+              <input type="radio" id="Femenino" name="Genero" required value="Femenino">
+            </article>
+        </fieldset >
+                <fieldset class="campo">
+            <legend>tipo de documento</legend>
+            <article>
+              <label for="CC">CC</label>
+              <input type="radio" id="CC " name="documento" required  value="CC">
+            </article>
+            <article>
+              <label for="CE">CE</label>
+              <input type="radio" id="CE" name="documento" required value="CE">
+            </article>
+        </fieldset>
+                <label for="Telefono">Numero de documento:</label>
+            <input 
+                type="number" 
+                placeholder="Numero de documento"
+                id="Telefono"
+                name="Telefono"
+                required 
+                minlength="5" 
+                maxlength="15"
+                class="campo"
+                >
+
+        <label for="Fecha">Fecha de nacimiento</label>
+            <input 
+                type="date" 
+                id="Fecha" 
+                name="Fecha" 
+                required
+                class="campo"
+            >
+            <button type="submit">Siguiente</button>
+        </form>
+            <p>
+                En esta primera etapa, te pediremos que completes un formulario con tus datos 
+                personales, como tu nombre, identificación y datos de contacto. Esta información 
+                nos ayudará a validar tu identidad y a iniciar correctamente el proceso de aprobación 
+                para la compra. Por favor, asegúrate de ingresar todos los datos de manera precisa 
+                para evitar retrasos en las siguientes fases.
+            </p>    
+    </article>
+
+           <footer>
+        
+        <div class="pie1">
+            <h1>AUTOMOTIVE</h1>
+          <p>Calle falsa 123,ciudad,pais</p>
+          <p>Tel:+1 234 567890</p>
+          <p>contacto@canwes.com</p>
+        </div>
+        <hr>
+        <div class="pie2">
+            <h1>horario</h1>
+           <p>Lunes-viernes: 12AM - 10PM</p>
+           <p>Sabados-Domingos: 1PM - 11PM</p>
+        </div>
+        <hr>
+        <div class="pie3">
+            <h1>Siguenos</h1>
+            <a href="https://www.facebook.com/"><p>Facebook</p>
+                <img src="otrasimg/icons8-facebook-rodeado-de-círculo-50.png" alt="">
+            </a>
+            <a href="https://www.twitter.com/"><p>Whatsapp</p>
+                <img src="otrasimg/icons8-whatsapp-50.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/"><p>Instagram</p>
+                <img src="otrasimg/icons8-instagram-50.png" alt="">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

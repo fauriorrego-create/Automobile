@@ -1,0 +1,245 @@
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0%;
+}
+
+
+header {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   background-color: black;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: rgb(190, 190, 190);
+}
+.titulo h1{
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+header .img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    
+}
+
+header .img:hover {
+    transition:ease 0.5s; ;
+    transform: scale(1.1);
+}
+
+
+nav {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    background-color: #949494;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+
+nav a:hover{
+    transition: ease 0.5s;
+    transform: translateY(-10%) scale(1.2);
+    border-bottom: solid #2684ff 3px;
+    
+}
+
+nav  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s;
+    padding: 0 30px;
+    cursor: pointer;    
+}
+video{
+    width: 100%;
+    height: auto;
+}
+.imagen {
+    width: 300px; 
+    height: 300px;    
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+.content1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+.content2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    
+}
+.content2 p{
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 4%;
+    color: white;
+}
+.botones{
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 20px;
+}
+.botones a {
+    animation: pulse 2s infinite;
+    background-color: #2684ff;
+    text-decoration: none;
+    color: #f4f6f9;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 13px;
+    transition: ease 0.4s;
+}
+
+.botones a:hover {
+    animation: none;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #111e91;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #333;
+}
+.pie1{
+width: 300px;
+}
+.pie2{
+width: 300px;
+}
+.pie3{
+width: 300px;
+display: grid;
+justify-content: center;
+
+}
+.pie3 a img{
+    width: 30px;
+    height: 30px;
+    padding: 0%;
+    margin: 10px;
+    cursor: pointer;
+}
+.pie3 a{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+.menu{
+    display: none;
+}
+@media (max-width:849px){
+      header{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .barraprin{
+        display: flex;
+        flex-direction: column;
+        position: static;
+        display: none;
+      }
+      details summary {
+        text-decoration: none;
+        padding: 0 20px;
+        position: sticky;
+        top: 0%;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-end;
+        margin:0;
+        font-size: 20px;
+        cursor: pointer;
+
+      }
+      .menu{
+        display: block;
+      }
+      .barrasec{
+        display: flex;
+        flex-direction: column;
+      }
+      .barrasuc:hover{
+        transition: ease 0.5s;
+        transform: translateY(-10%) scale(1.05);
+        border-bottom: solid #2684ff 3px;
+      }
+      .content2{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .botones{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+      footer{
+         display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+      hr{
+        display: none;
+      }
+      body{
+        margin: 0%;
+      }
+}
+

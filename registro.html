@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Registro</title>
+</head>
+<body>
+
+    <form action="inicio.html" class="formulario">
+        <h1>Registro</h1>
+        <label for="nombre">Nombre:</label>
+            <input 
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="ingresa un nombre"
+                required 
+                minlength="5" 
+                maxlength="30"
+                class="campo"
+            >
+        <label for="apellido">Apellido</label>
+            <input 
+                 type="text" 
+                 placeholder="Apellido"
+                 id="apellido"
+                 name="apellido"
+                 placeholder="ingresa un apellido"
+                 required 
+                 minlength="5" 
+                 maxlength="30"
+                 class="campo"
+            >       
+        <label for="correo">Correo electronico</label>
+            <input 
+                type="email" 
+                placeholder="correo electronico"
+                id="correo"
+                name="correo"
+                required
+                class="campo"
+            >
+                <label for="Telefono">Telefono:</label>
+            <input 
+                type="number" 
+                placeholder="Telefono"
+                id="Telefono"
+                name="Telefono"
+                required 
+                minlength="5" 
+                maxlength="15"
+                class="campo"
+                >
+        <label for="Contraseña">Contraseña</label>
+            <input 
+                type="password" 
+                placeholder="Contraseña"
+                id="Contraseña"
+                name="Contraseña"
+                required 
+                minlength="5" 
+                maxlength="30"
+                class="campo"
+                >
+
+        <fieldset class="campo">
+            <legend>Genero</legend>
+            <article>
+              <label for="Masculino">Masculino</label>
+              <input type="radio" id="Masculino " name="Genero" required  value="Masculino">
+            </article>
+            <article>
+              <label for="Femenino">Femenino</label>
+              <input type="radio" id="Femenino" name="Genero" required value="Femenino">
+            </article>
+        </fieldset >
+                <fieldset class="campo">
+            <legend>tipo de documento</legend>
+            <article>
+              <label for="CC">CC</label>
+              <input type="radio" id="CC " name="documento" required  value="CC">
+            </article>
+            <article>
+              <label for="CE">CE</label>
+              <input type="radio" id="CE" name="documento" required value="CE">
+            </article>
+        </fieldset>
+                <label for="Telefono">Numero de documento:</label>
+            <input 
+                type="number" 
+                placeholder="Telefono"
+                id="Telefono"
+                name="Telefono"
+                required 
+                minlength="5" 
+                maxlength="15"
+                class="campo"
+                >
+
+        <label for="Fecha">Fecha de nacimiento</label>
+            <input 
+                type="date" 
+                id="Fecha" 
+                name="Fecha" 
+                required
+                class="campo"
+            >
+        <p>Ya tiene una cuenta?<a href="index.html">Iniciar sesión</a></p>
+        <button type="submit">Crear cuenta</button>
+
+    </form>
+</body>
+</html>

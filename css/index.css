@@ -1,0 +1,87 @@
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-image: url(../otrasimg/pexels-albinberlin-919073.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.content {
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 20px;
+}
+
+/* Estilo del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    width: 400px;
+    height: auto;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 5%;
+    border-radius: 13px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 6px white,
+    3px 3px 6px black;
+}
+
+.formulario h1 {
+  text-align: center;
+}
+
+
+label{
+    text-align: center;
+}
+
+.formulario input{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 13px;
+    box-shadow: 0 0 6px white,
+    3px 3px 6px black;
+}
+
+.formulario p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button{
+    width: 50%;
+    color: white;
+    box-shadow: 0 0 6px white,
+    3px 3px 6px black;
+    background-color: black;
+    padding: 10px 10px;
+    margin: 0 25%;
+    border-radius: 13px;
+}
+button:hover{
+    transition: ease 0.4s;
+    transform: scale(1.1);
+}
+
+
+
+
